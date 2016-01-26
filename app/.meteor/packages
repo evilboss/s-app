@@ -1,0 +1,66 @@
+# Meteor packages used by this project, one per line.
+# Check this file (and the other files in this directory) into your repository.
+#
+# 'meteor add' and 'meteor remove' will edit this file for you,
+# but you can also edit it by hand.
+
+# MDG / Core packages
+meteor-base             # Packages every Meteor app needs to have
+mobile-experience       # Packages for a great mobile UX
+mongo                   # The database Meteor supports right now
+blaze-html-templates    # Compile .html files into Meteor Blaze views
+session                 # Client-side reactive dictionary for your app
+jquery                  # Helpful client-side library
+tracker                 # Meteor's client-side reactive programming library
+email                   # The email package allows sending email from a Meteor app.
+stylus                  # Stylus is a CSS pre-processor with a simple syntax and expressive dynamic behavior. It allows for more compact stylesheets and helps reduce code duplication in CSS files
+random                  # The random package provides several functions for generating random numbers.
+reactive-var            # Provides support for Reactive variables
+
+
+standard-minifiers      # JS/CSS minifiers run for production mode
+es5-shim                # ECMAScript 5 compatibility for older browsers.
+ecmascript              # Enable ECMAScript2015+ syntax in app code
+http                    # Enable http to call Netsuite REST API
+mdg:geolocation         #Provides reactive geolocation on desktop and mobile.
+
+# Third Party Packages
+dburles:google-maps             # Google Maps Javascript API v3
+jeremy:geocomplete              # Geocoding and Google Places Autocomplete Plugin
+fourseven:scss                  # scs compiler
+kadira:flow-router              # FlowRouter is a very simple router for Meteor. It does routing for client-side apps and does not handle rendering itself.
+kadira:blaze-layout             # This is a layout manager designed for Blaze. This is built to use with FlowRouter but, this can be used without FlowRouter too. This is a very simple layout manager.
+percolate:momentum              # Reactive animation package for Meteor.
+dburles:collection-helpers      # Collection helpers automatically sets up a transformation on your collections using Meteor's Mongo.Collection
+reywood:publish-composite       # provides a flexible way to publish a set of related documents from various collections using a reactive join.
+momentjs:moment                 # A lightweight JavaScript date library for parsing, validating, manipulating, and formatting dates.
+mrt:underscore-string-latest    # The underscore.string string manipulation library repackaged for Meteor.
+matb33:collection-hooks         # Extends Mongo.Collection with before/after hooks for insert, update, remove, find, and findOne.
+yasinuslu:blaze-meta            # A meteor package that makes it easy to manage meta-data
+aldeed:collection2              # A Meteor package that allows you to attach a schema to a Mongo.Collection.
+aldeed:autoform                 # AutoForm is a Meteor package that adds UI components and helpers to easily create basic forms with automatic insert and update events
+arillo:flow-router-helpers      # Template helpers for kadira:flow-router
+fabienb4:autoform-semantic-ui   # Semantic-ui template for aldeed:autoform package.
+zimme:active-route              # This package provide helpers for figuring out if some route or path is or isn't the currently active route.
+semantic:ui-css                 # This package integrates Semantic UI into Meteor and lets you configure what parts you need.
+semantic:ui                     # Official Semantic UI Integration for Meteor
+dburles:spacebars-tohtml        # A simple helper function to assist with rendering spacebars to HTML. Works on both the server and the client.
+maazalik:highcharts             # Meteor Wrapper for HighCharts
+rcy:nouislider                  # jQuery noUiSlider packaged for Meteor
+meteorhacks:subs-manager        # Subscriptions Manager for Meteor
+jeffm:local-persist             # Persistent client (browser) collections for Meteor, using localStorage.
+rexzh0u:bxslider                # Responsive jQuery content slider
+juliancwirko:s-alert            # Simple and fancy notifications for Meteor
+
+# Removed packages - no longer needed
+#pascoual:pdfkitx                # Create PDF with PDFKit Node.js package in your Meteor application, server-side and browser-side.
+
+
+# Application-specific packages
+map-functions                   # Custom map functions
+solarquote:core                 # Core SolarQuote
+
+# development only packages
+#meteortoys:allthings            # Insanely Handy Development Tools for Meteor
+#meteortoys:notifications        # Meteor toys notifications - replaces Console.log(...) in Dev, reverts to Console.log(...) in Prod
+dburles:factory                 # A package for creating test data or for generating fixtures.

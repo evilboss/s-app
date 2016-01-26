@@ -1,0 +1,7 @@
+/settings.json
+/mup-prod.json
+# Created by .ignore support plugin (hsz.mobi)
+.idea/
+solarquote.iml
+app/public/report.pdf
+/environments/production/

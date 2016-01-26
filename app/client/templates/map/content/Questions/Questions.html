@@ -1,0 +1,59 @@
+<template name="Questions">
+  <div class="ui container segment map-info-block full-height">
+    {{#if loading}}
+      <h3>Loading...</h3>
+    {{else}}
+      <div class="ui stackable grid">
+        {{#if isCommercial}}
+          <div class="eight wide column grid">
+            <div class="ui blue ribbon label">Commercial</div>
+            <div class="ui relaxed divided list">
+              <div class="item">
+                How many square meters approximately is your office?
+                - How many employees work in your office?
+                <select class="" name="employee-count">
+                  <option value="1 - 10">1 - 10</option>
+                  <option value="10 - 50">10 - 50</option>
+                  <option value="50 - 100">50 - 100</option>
+                  <option value="100 - 250">100 - 250</option>
+                  <option value="250 - 999">250 - 999</option>
+                  <option value="999+">999+</option>
+                </select>
+              </div>
+              <div class="item">
+                <div class="ui checkbox checked">
+                  <input type="checkbox" name="heavy-equipment" tabindex="0" class="hidden">
+                  <label>Do you operate heavy electrically-powered machinery on this site?
+                  </label>
+                </div>
+              </div>
+            </div>
+          </div>
+        {{else}}
+          <div class="eight wide column grid">
+            <div class="ui blue ribbon label">Residential</div>
+            <div class="ui relaxed divided list">
+              {{#each questions}}
+                {{>checkItem this}}
+              {{/each}}
+            </div>
+          </div>
+
+        {{/if}}
+        <div class="eight wide column grid">
+          <div style="width:100%;">
+            {{> highchartsHelper chartId="powerGen" charHeight="100%" chartObject=powerGenerationChart}}
+          </div>
+        </div>
+      </div>
+      <div class="ui grid">
+        <div class="sixteen wide column">
+          <div class="ui right floated primary button" id="ok">
+            OK
+          </div>
+
+        </div>
+      </div>
+    {{/if}}
+  </div>
+</template>

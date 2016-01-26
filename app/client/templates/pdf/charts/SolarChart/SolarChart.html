@@ -1,0 +1,35 @@
+<template name="SolarChart">
+
+    <div id="bar-chart" class="ui segment">
+        <div class="graph">
+            <div class="data">
+                <div class="usage future-usage" style="height: 10%;z-index:1;">
+                    <div class="icon"></div>
+                    <div class="your-usage">Future</div>
+                </div>
+
+                <div class="usage night-usage" style="height: {{getNightCap}}%;z-index:1;">
+                    <div class="icon"></div>
+                    <div class="your-usage">Night<br/>[+Battery]</div>
+                </div>
+
+                <div class="usage day-usage" style="height: {{getDayCap}}%;">
+                    <div class="icon"></div>
+                    <div class="transparent-bar">
+                    </div>
+
+                    <div class="your-usage">Day<br/>[Solar]</div>
+                </div>
+                <div class="bar-container">
+
+                    <div class="panel panel0">
+                    </div>
+                    <div class="panel panel1"
+                         style="height: {{getPanelPercentage}}%;">
+                    </div>
+                </div>
+
+            </div>
+        </div>
+    </div>
+</template>

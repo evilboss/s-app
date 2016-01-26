@@ -1,0 +1,39 @@
+<template name="SolarCapacity">
+
+    <div id="bar-chart" class="ui segment">
+        <h3 class="ui center aligned header">
+            Your Power Needs
+        </h3>
+
+        <div class="graph">
+            <div class="data">
+                <div class="transparent-bar" style="z-index: 1;">
+                </div>
+                <div class="usage future-usage" style="height: 10%;">
+                    <div class="icon"></div>
+                    <div class="your-usage">Future</div>
+                </div>
+
+                <div class="usage night-usage" style="height: {{getNightCap}}%;">
+                    <div class="icon"></div>
+                    <div class="your-usage">Night<br/>[+Battery]</div>
+                </div>
+
+                <div class="usage day-usage" style="height: {{getDayCap}}%;">
+                    <div class="icon"></div>
+                    <div class="your-usage">Day<br/>[Solar]</div>
+                </div>
+
+                <div class="bar-container" style="z-index: 1;">
+
+                    <div class="panel panel0">
+                    </div>
+                    <div class="panel panel1"
+                         style="height: {{getPanelPercentage}}%;">
+                    </div>
+                </div>
+            </div>
+        </div>
+        <p>This shows how much power your roof can produce compared with your power needs</p>
+    </div>
+</template>

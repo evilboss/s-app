@@ -1,0 +1,15 @@
+Hi {{firstname}}
+
+Click here to access your Customised Solar Power Report:
+{{absUrl}}/reports/{{_id}}
+
+To discuss your solar system in more detail, please contact us on 1800 275 627.
+
+Regards,
+
+Mark Group
+Your Power Cost Saving Specialists
+
+
+
+Mark Group Australia Pty Ltd

@@ -1,0 +1,139 @@
+<template name="map">
+
+  <div class="ui thirteen wide column no-wing-padding">
+    <div id="cancel-controls" class="ui segment">
+      <p>Cancel Drawing</p>
+
+      <div class="item">
+        <div class="ui fluid animated blue button" tabindex="0" data-action="cancel-add-area" controls="true">
+          <div class="visible content"><i class="right cancel icon"></i></div>
+          <div class="hidden content">
+            Cancel
+          </div>
+        </div>
+      </div>
+    </div>
+    <div id="map-controls" class="ui segment">
+      <p>Customise<br/>Your System</p>
+
+      <div class="ui list">
+        <div class="item">
+          <div class="ui fluid animated blue button" tabindex="0" data-template="Usage">
+            <div class="visible content">
+              Step 1
+            </div>
+            <div class="hidden content">
+              My Bill
+            </div>
+          </div>
+        </div>
+        <div class="item">
+          <div class="ui fluid animated blue button" tabindex="0" data-action="add-new-area" controls="true">
+            <div class="visible content">
+                Step 2
+            </div>
+            <div class="hidden content">
+              Draw Roof
+            </div>
+          </div>
+        </div>
+        <div class="item">
+          <div class="ui fluid animated blue button customSettings" tabindex="0" data-action="questions"
+               data-template="Questions">
+            <div class="visible content">
+              Step 3
+            </div>
+            <div class="hidden content">
+              Usage
+            </div>
+          </div>
+        </div>
+        <div class="item">
+          <div class="ui fluid animated blue button customSettings" tabindex="0" data-action="my-roof"
+               data-template="MyRoof">
+            <div class="visible content">
+              Step 4
+            </div>
+            <div class="hidden content">
+              Roof Pitch
+            </div>
+          </div>
+        </div>
+        <div class="item">
+          <div class="ui fluid animated blue button customSettings" tabindex="0" data-action="my-shade"
+               data-template="MyShade">
+            <div class="visible content">
+              Step 5
+            </div>
+            <div class="hidden content">
+              Shade
+            </div>
+          </div>
+        </div>
+        <div class="item">
+          <div class="ui fluid animated red button customSettings {{selectedRoofClass}}" tabindex="0" data-action="delete-roof"
+               data-template="DeleteRoof">
+            <div class="visible content">
+              Step 6
+            </div>
+            <div class="hidden content multi-line">
+              Delete<br>Roof
+            </div>
+          </div>
+        </div>
+
+      </div>
+    </div>
+
+    <div class="help close"><i class="right floated remove circle icon large black"></i></div>
+
+    <div id="how-to-use" class="ui segment yellow-bg" style="z-index: 3;">
+      <h3 class="ui center aligned header">
+        How to Use
+      </h3>
+
+      <p>
+        Watch this short video to discover how to create your custom solar system
+      </p>
+      <script charset="ISO-8859-1" src="//fast.wistia.com/assets/external/E-v1.js" async></script><div class="wistia_responsive_padding" style="padding:56.25% 0 0 0;position:relative;"><div class="wistia_responsive_wrapper" style="height:100%;left:0;position:absolute;top:0;width:100%;"><span class="wistia_embed wistia_async_zuwxrs0j4f popover=true popoverAnimateThumbnail=true videoFoam=true" style="display:inline-block;height:100%;width:100%">&nbsp;</span></div></div>
+    </div>
+    <div class="ui icon help-icon">
+      <i class="help circle icon large blue"></i>
+    </div>
+    <div class="ui icon input" id="map-search">
+      <input id="place3" type="text" name="place" placeholder="Type Your Address To Get Started...">
+      <i class="circular search link icon"></i>
+    </div>
+    <div class="map" style="flex: inherit">
+      <div class="map-container">
+        <div id="map2"></div>
+      </div>
+    </div>
+
+    <div class="container segment map-float-container">
+      {{> Template.dynamic template=controlls}}
+    </div>
+
+    <!--<div id="selectedPanelInfo">
+      {{> selectedPanelInfo }}
+    </div>-->
+  </div>
+
+  <!--Right-->
+  <div class="ui three wide column no-wing-padding">
+    {{> selectedPanelInfo }}
+    <!--{{> SolarCapacity}}
+    <div id="callnow" class="ui segment">
+      <img class="right floated tiny circular ui image" style="width: 57px"
+           src="/assets/supportAvatar/callnow.png">
+
+      <div class="description">
+        Speak to one of our friendly consultants today
+      </div>
+      <div class="extra content">
+        <a href="tel:{{telLink}}">{{telephone}}</a>
+      </div>
+
+    </div>-->
+  </div>
+</template>

@@ -1,0 +1,19 @@
+<template name="contactForm">
+  <div class="ui contactForm modal">
+    <i class="close icon"></i>
+
+    <div class="header">
+      Contact Info
+    </div>
+    <div class="content">
+      {{> quickForm
+      collection="Leads"
+      id="insertLeadForm"
+      type="insert"
+      template="semanticUI"
+      omitFields='address,bounds,isPassedToNetsuite'
+      buttonClasses='ui approve button'
+      }}
+    </div>
+  </div>
+</template>

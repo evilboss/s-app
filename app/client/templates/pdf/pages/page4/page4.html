@@ -1,0 +1,91 @@
+<template name="page4">
+  <div class="ui raised very padded text container segment paper">
+    <main id="container" style="margin-bottom: 22px">
+      <h2 class="ui center aligned icon header">
+        How Much Solar Do I Need
+      </h2>
+
+      <!-- <div class="ui container margin-bottom">
+        <img class="ui  image" src="/assets/report/page4-img2.png" width="100%">
+      </div> -->
+      <div class="ui grid centered">
+        <div class=" eight wide column">
+          <h3 class="ui center aligned header">
+            Solar Panel Only
+          </h3>
+          {{> SolarChart}}
+        </div>
+        <div class="eight wide column">
+          <h3 class="ui center aligned header">
+            Solar Panel with Battery
+          </h3>
+          {{> solarWithBattery}}
+        </div>
+        <div class="eight wide column ">
+          <h3 class="ui center aligned header">
+            9kW - Solar Panels + Battery for charging Electric Car
+          </h3>
+          {{> solarChartForEcar}}
+        </div>
+      </div>
+      <table class="ui small celled compact unstackable table">
+        <thead>
+          <tr>
+            <th>Total Area</th>
+            <th>Total Number of Panels</th>
+            <th>Total Capacity</th>
+          </tr>
+        </thead>
+        <tbody>
+          <tr>
+            <td>{{area}} m2</td>
+            <td>{{totalPanel}}</td>
+            <td>{{capacity}} KW/H</td>
+          </tr>
+        </tbody>
+      </table>
+      <h2 class="ui center aligned icon header">
+        Electric car images
+      </h2>
+
+      <div class="ui three doubling cards">
+        <div class="card">
+          <div class="image">
+            <img src="/cars/tesla.jpg">
+          </div>
+          <div class="ui blue top right attached label">Tesla-Model-S</div>
+        </div>
+        <div class="card">
+          <div class="image">
+            <img src="/cars/bmw.jpg">
+          </div>
+          <div class="ui blue top right attached label">BMW i3</div>
+        </div>
+        <div class="card">
+          <div class="image">
+            <img src="/cars/audi.jpg">
+          </div>
+          <div class="ui blue top right attached label">Audi E-Tron</div>
+        </div>
+        <div class="card">
+          <div class="image">
+            <img src="/cars/mitsu.png">
+          </div>
+          <div class="ui blue top right attached label">Mitsubishi i-MiEV</div>
+        </div>
+        <div class="card">
+          <div class="image">
+            <img src="/cars/nissan.jpg">
+          </div>
+          <div class="ui blue top right attached label">Nissan Leaf</div>
+        </div>
+      </div>
+
+    </main>
+    <div class="footer" style="width:87%;">
+      {{> pdfFooter id=id}}
+    </div>
+
+  </div>
+
+</template>

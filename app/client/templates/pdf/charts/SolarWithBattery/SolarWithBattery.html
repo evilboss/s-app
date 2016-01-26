@@ -1,0 +1,39 @@
+<template name="solarWithBattery">
+
+
+    <div id="bar-chart" class="ui segment">
+        <div class="graph">
+            <div class="data">
+                <div class="transparent-bar" style="z-index: 1;">
+                </div>
+                <div class="usage future-usage" style="height: 10%;z-index:2;margin-top: 1px;">
+                    <div class="icon"></div>
+                    <div class="your-usage">Future</div>
+                </div>
+
+                <div class="usage night-usage" style="height: {{getNightCap}}%;">
+                    <div class="icon"></div>
+                    <div class="your-usage">Night<br/>[+Battery]</div>
+                </div>
+
+                <div class="usage day-usage" style="height: {{getDayCap}}%;">
+                    <div class="icon"></div>
+                    <div class="your-usage">Day<br/>[Solar]</div>
+                </div>
+
+                <div class="bar-container" style="z-index:1;">
+
+                    <div class="panel panel0">
+                    </div>
+                    <div class="panel panel1"
+                         style="height: {{getPanelPercentage}}%;">
+                    </div>
+
+                    <!-- <div class="caption rotate">327W</div>-->
+                </div>
+            </div>
+        </div>
+    </div>
+
+
+</template>

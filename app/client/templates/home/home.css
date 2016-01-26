@@ -1,0 +1,8 @@
+a.current-location {
+    text-decoration: underline !important;
+    color:black !important;
+    cursor: pointer
+}
+i.red.marker.icon {
+    font-size:2em !important;
+}

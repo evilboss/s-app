@@ -1,0 +1,18 @@
+<template name="tableData">
+
+    {{#each toArray this}}
+        {{#if isNumber this}}
+            <td>{{isNumber this}}</td>
+        {{else}}
+            {{#with toValue this}}
+                <td>{{this.year}}</td>
+                <td>{{this.noSolar}}</td>
+                <td>{{this.solar}}</td>
+                <td>{{this.solarBattery}}</td>
+            {{/with}}
+        {{/if}}
+
+
+    {{/each}}
+
+</template>

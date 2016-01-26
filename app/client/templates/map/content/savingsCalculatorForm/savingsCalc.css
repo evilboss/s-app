@@ -1,0 +1,9 @@
+label{
+    color:white !important;
+}
+.ui.checkbox label, .ui.checkbox + label{
+    color:white !important;
+}
+textarea::selection, input::selection{
+    color:white !important;
+}

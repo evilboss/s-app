@@ -1,0 +1,62 @@
+<template name="page2">
+
+  <div class="ui raised very padded text container segment paper">
+    <main id="container" style="margin-bottom: 22px">
+      <h2 class="ui center aligned icon header">
+        Your Annual Savings
+
+
+      </h2>
+      <table class="ui small celled compact unstackable table">
+        <thead>
+        <tr>
+          <th></th>
+          <th>Year</th>
+          <th>No Solar</th>
+          <th>Solar</th>
+          <th>Solar + Battery</th>
+        </tr>
+        </thead>
+        <tbody>
+
+        {{#each yearValues}}
+          <tr>
+            <td>{{this}}</td>
+            <td class="right aligned">{{getYear this}}</td>
+            <td class="right aligned">${{nonSolar this}}</td>
+            <td class="right aligned">${{withSolar this}}</td>
+            <td class="right aligned">${{solarBattery this}}</td>
+          </tr>
+        {{/each}}
+
+
+
+
+        </tbody>
+        <tfoot>
+        <tr>
+            <th></th>
+            <th>Total</th>
+            <th class="right aligned">${{getTotal "noSolarData"}}</th>
+            <th class="right aligned">${{getTotal "solarData"}}</th>
+            <th class="right aligned">${{getTotal "solarBatteryData"}}</th>
+        </tr>
+        <tr>
+            <th></th>
+            <th>Saving</th>
+            <th class="right aligned">${{getSavings "noSolarData"}}</th>
+            <th class="right aligned">${{getSavings "solarData"}}</th>
+            <th class="right aligned">${{getSavings "solarBatteryData"}}</th>
+        </tr>
+        </tfoot>
+      </table>
+      <h2 class="ui center aligned icon header">
+        Cumulative Cost Of Energy
+      </h2>
+      {{> AreaChart}}
+    </main>
+    <div class="footer" style="width:87%;">
+      {{> pdfFooter id=id}}
+    </div>
+      </div>
+</template>

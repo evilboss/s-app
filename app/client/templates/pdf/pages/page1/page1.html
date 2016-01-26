@@ -1,0 +1,54 @@
+<template name="page1">
+    <div class="ui raised very padded text container segment paper">
+        <main id="container" style="margin-bottom: 22px">
+
+            <input type="hidden" value="{{address}}" id ="address">
+            <input type="hidden" value="{{bounds}}" id ="bounds">
+            <div class="ui ">
+                <img class="ui centered medium image" src="/assets/report/logo.png">
+            </div>
+            <br>
+
+            <h2 class="ui center aligned blue header">POWER COST SAVING EXPERTS</h2>
+
+            <h3 class="ui center aligned  header">Your Custom Solar System</h3>
+            <br>
+
+            <div class="margin-bottom">
+                <h4 class="ui header no-margin">Customer</h4>
+
+                <p>{{firstname}} {{lastname}}</p>
+            </div>
+            <div class="margin-bottom">
+                <h4 class="ui header no-margin">Address</h4>
+
+                <p>{{address}}</p>
+            </div>
+            <div class="ui padded center aligned segment">
+                Your Roof can empower you<br/>
+                to save up to <span class="blue-text"><b>$113,000</b></span><br/> in power bill savings after 25years
+            </div>
+            <div class="ui">
+              <div class="map-container">
+                  <div id="map_report"></div>
+              </div>
+            </div>
+            <div class="ui centered card">
+                <!-- <div class="image">
+                    <img class="ui medium image"
+                         src="http://maps.googleapis.com/maps/api/staticmap?center={{lat}},{{lng}}&zoom=20&size=600x600&maptype=satellite">
+                </div> -->
+                <div class="content center aligned">
+                    <span class="header">Your Roof With Solar</span>
+                </div>
+            </div>
+
+
+        </main>
+        <div class="footer" style="width:87%;">
+            {{> pdfFooter id=id}}
+        </div>
+
+    </div>
+
+</template>

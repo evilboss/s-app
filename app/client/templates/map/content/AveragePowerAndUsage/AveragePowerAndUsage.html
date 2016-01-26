@@ -1,0 +1,24 @@
+<template name="AveragePowerAndUsage">
+    <div class="ui grid">
+
+        <div class="sixteen wide column center aligned">
+            <h4 class="ui horizontal divider header ">
+                Your Power Needs
+            </h4>
+
+            <div class="ui input apuInput">
+                <input type="text" value="{{getkwh}}kWh" {{trueData}}>
+            </div>
+            <br/>
+        </div>
+        <div class="sixteen wide column center aligned">
+            <h4 class="ui horizontal divider header ">
+                Your Roof Capacity
+            </h4>
+
+            <div class="ui input apuInput">
+                <input type="text" value="50" disabled="">
+            </div>
+        </div>
+    </div>
+</template>

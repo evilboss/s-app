@@ -1,0 +1,30 @@
+<template name="uiSlider">
+
+  <div>
+    <div class="ui center aligned stackable one column grid">
+      <div class="column">
+        <div class="ui slider range">
+          <h3 class="ui header">
+            My monthly electricity bill is
+            <output><span style="color:#5597cc">${{monthlyCostHelper}}</span></output>
+          </h3>
+          <div class="range-slider"></div>
+          <h3 class="ui header">
+            That means I spend approximately
+            <span style="color:#5597cc">${{yearlyCostHelper}}/year</span> on electricity
+          </h3>
+        </div>
+      </div>
+    </div>
+  </div>
+  <div class="ui center aligned stackable one column grid">
+    <div class="column">
+      <h3 class="ui header">What is your Average Daily Usage (kWh)?</h3>
+
+      <div class="ui input">
+        <input id="kwh" type="text" style="text-align:center;font-weight: bold"
+               placeholder="{{killowattPh}}(kWh)">
+      </div>
+    </div>
+  </div>
+</template>

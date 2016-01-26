@@ -1,0 +1,47 @@
+<template name="page7">
+
+
+
+<div class="ui raised very padded text container segment paper">
+  <main id="container" style="margin-bottom: 22px">
+    <h2 class="ui center aligned icon header">
+      Solar Statistics
+    </h2>
+
+    <!-- <div class="ui container">
+    <img class="ui image" src="/assets/report/page7-img1.png" width="100%">
+  </div> -->
+</main>
+<div class="footer" style="width:87%;">
+  {{> pdfFooter id=id}}
+</div>
+
+<div class="ui two column grid">
+  <div class="column center aligned">
+    <div class="ui fluid card mapCon" >
+      <img class="ui image" src="/assets/report/map1.png" width="100%">
+      <h3>15% Solar <br/>2015</h3>
+    </div>
+  </div>
+  <div class="column  center aligned ">
+    <div class="ui fluid card  mapCon">
+      <img class="ui image" src="/assets/report/map2.png" width="100%">
+      <h3>50% Solar + Battery <br/> 2025</h3>
+
+    </div>
+  </div>
+  <div class="column  center aligned ">
+    <div class="ui fluid card mapCon">
+      <img class="ui image" src="/assets/report/{{getStateShortname}}.png" width="100%">
+      <h3>{{getState}}</h3>
+    </div>
+  </div>
+  <div class="column center aligned">
+    <div class="ui fluid card mapCon">
+
+    </div>
+  </div>
+</div>
+
+</div>
+</template>

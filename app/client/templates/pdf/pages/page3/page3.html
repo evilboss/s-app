@@ -1,0 +1,83 @@
+<template name="page3">
+  <div class="ui raised very padded text container segment paper">
+    <main id="container" style="margin-bottom: 22px">
+      <h2 class="ui center aligned icon header no-margin">
+        How much solar power can your roof produce?
+
+      </h2>
+      <table class="ui small celled compact unstackable table">
+        <thead>
+          <tr>
+            <th>Panel</th>
+            <th>Max Panel fit</th>
+            <th>KW</th>
+            <th>AU KW/Day</th>
+            <th>% of Use</th>
+          </tr>
+        </thead>
+        <tbody>
+          <tr>
+            <td>Sun Power</td>
+            <td>33</td>
+            <td>{{panelDatas.[1]}}</td>
+            <td>40.1</td>
+            <td>100%</td>
+          </tr>
+          <tr>
+            <td>LG</td>
+            <td>33</td>
+            <td>{{panelDatas.[2]}}</td>
+            <td>40.1</td>
+            <td>100%</td>
+          </tr>
+          <tr>
+            <td>Canadian Solar</td>
+            <td>33</td>
+            <td>{{panelDatas.[3]}}</td>
+            <td>40.1</td>
+            <td>100%</td>
+          </tr>
+          <tr>
+            <td>Renesola</td>
+            <td>33</td>
+            <td>{{panelDatas.[4]}}</td>
+            <td>40.1</td>
+            <td>100%</td>
+          </tr>
+          <tr>
+            <td>Standard</td>
+            <td>33</td>
+            <td>{{panelDatas.[5]}}</td>
+            <td>40.1</td>
+            <td>100%</td>
+          </tr>
+
+        </tbody>
+      </table>
+      <h2 class="ui center aligned icon header">
+        Your Roof With Solar
+      </h2>
+      <div class="ui">
+        <div class="map-container">
+          <div id="map_report2"></div>
+        </div>
+      </div>
+      <h2 class="ui center aligned icon header">
+        Best Solar Panel Fit
+      </h2>
+      <div class="ui center aligned icon header">
+        Sunpower 315w panels
+        <br> Max Output From Roof : 40.kw/Day
+        <br> Stage1 4.91kw - 15 panels Stage2 5.39kw - 9 panels
+      </div>
+      <!-- <div class="ui container">
+                <img class="ui image" src="/assets/report/page3-img1.png" width="100%">
+            </div> -->
+    </main>
+    <div class="footer" style="width:87%;">
+      {{> pdfFooter id=id}}
+    </div>
+
+  </div>
+
+</template>

@@ -1,0 +1,15 @@
+<template name="pdfLayout">
+  {{#if loading}}
+    <p>Loading...</p>
+  {{else}}
+    {{> page1 bounds=lead.bounds firstname=lead.firstname lastname=lead.lastname id=lead._id address=lead.address email=lead.email}}
+    {{> page2 id=lead._id}}
+    {{> page3 id=lead._id}}
+    {{> page4 id=lead._id}}
+    {{> page5 id=lead._id}}
+    {{> page6 id=lead._id}}
+    {{> page7 id=lead._id}}
+    {{> page8 id=lead._id}}
+    {{> page9 id=lead._id}}
+  {{/if}}
+</template>

@@ -1,0 +1,14 @@
+<template name="checkItem">
+  <div class="item">
+    <div class="ui checkbox" data-id="{{_id}}">
+      <input type="checkbox" name="{{name}}"
+            {{isChecked _id}}
+             tabindex="0"
+             data-percentage="{{percentage}}"
+             data-group="{{group}}"
+             data-usage-type="{{usageType}}"
+             class="hidden">
+      <label>{{label}}</label>
+    </div>
+  </div>
+</template>

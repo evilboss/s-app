@@ -1,0 +1,53 @@
+<template name="home">
+
+  <div class="ui grid container search-field computer tablet only">
+    <div class="sixteen wide column">
+
+      <div>
+        <i class="text-glow red marker icon"></i>
+        <a class="current-location">
+          <b>Use Current Location!</b>
+        </a>
+      </div>
+
+      <div class="fluid ui massive icon input">
+
+        <input id="roofLocation" type="text" value="{{currentLocation}}" placeholder="Enter Your Address to Create Your Free Custom Solar Power Plan...">
+        <i class="marker icon"></i>
+      </div>
+
+    </div>
+
+    <div class="sixteen wide centered column">
+      <div class="ui centered grid">
+        <div class="ui big primary button {{geoLocationSet}}" id="lookAtMap">Next <i class="arrow right icon"></i>
+        </div>
+      </div>
+    </div>
+  </div>
+
+  <div class="ui grid container search-field mobile only">
+    <div class="sixteen wide column">
+      <div>
+        <i class="text-glow red marker icon"></i>
+        <a class="current-location">
+          <b>Use Current Location!</b>
+        </a>
+      </div>
+
+      <div class="fluid ui medium icon input">
+        <input id="roofLocation" type="text" value="{{currentLocation}}" placeholder="Enter Your Address to Create Your Free Custom Solar Power Plan...">
+        <i class="marker icon"></i>
+      </div>
+
+    </div>
+
+    <div class="sixteen wide centered column">
+
+      <div class="ui centered grid">
+        <div class="ui big primary button {{geoLocationSet}}" id="lookAtMap">Next<i class="arrow right icon"></i>
+        </div>
+      </div>
+    </div>
+  </div>
+</template>

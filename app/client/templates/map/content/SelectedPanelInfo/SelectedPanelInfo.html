@@ -1,0 +1,223 @@
+<template name="selectedPanelInfo">
+    <div class="ui seven wide column no-padding d-flex">
+        <table class="ui small very celled padded unstackable table">
+            <thead>
+            <tr>
+                <th class="thinHeading" colspan="2">All Roof Sections (Total)</th>
+            </tr>
+            <!--<tr>
+              <th>Area</th>
+              <th># Panels</th>
+              <th>Size</th>
+              <th>Capacity</th>
+            </tr>-->
+            </thead>
+            <tbody>
+            <tr>
+                <td>
+                    Estimated Cost
+                </td>
+                <td>
+                  {{getEstimatedCost}}
+                </td>
+            </tr>
+            <tr>
+                <td>
+                    Estimated Saving
+                </td>
+                <td>
+                    ${{getEstimatedSavings}}
+                </td>
+            </tr>
+            <tr>
+                <td>
+                    Area
+                </td>
+                <td>
+                  {{getArea}} m<sup>2</sup>
+                </td>
+            </tr>
+            <tr>
+                <td>
+                    Panels
+                </td>
+                <td>
+                  {{getPanelCount}}
+                </td>
+            </tr>
+            <tr>
+                <td>
+                    Size
+                </td>
+                <td>
+                  {{getSize}}kw
+                </td>
+            </tr>
+            <tr>
+                <td>
+                    Capacity
+                </td>
+                <td>
+                  {{getCapacity}}kWh
+                </td>
+            </tr>
+            </tbody>
+        </table>
+
+        <!--<table class="ui small very celled padded unstackable table">
+            <thead>
+            <tr>
+                <th class="thinHeading" colspan="4">Selected Roof</th>
+            </tr>
+            &lt;!&ndash;<tr>
+                <th>Area</th>
+                <th>Direction</th>
+                <th>Roof Pitch</th>
+                <th># Panels</th>
+                <th>Power</th>
+                <th>Size</th>
+                <th>Capacity</th>
+            </tr>&ndash;&gt;
+            </thead>
+            <tbody>
+            <tr>
+                <td>
+                    Area
+                </td>
+                <td>
+                    {{getArea}} m<sup>2</sup>
+                </td>
+            </tr>
+            <tr>
+                <td>
+                    Direction
+                </td>
+                <td>
+                  {{getFacing}}
+                </td>
+            </tr>
+            <tr>
+                <td>
+                    Roof Pitch
+                </td>
+                <td>
+                  {{getRoofTilt}}°
+                </td>
+            </tr>
+            <tr>
+                <td>
+                    # Panels
+                </td>
+                <td>
+                  {{getPanelCount}}
+                </td>
+            </tr>
+            <tr>
+                <td>
+                    Power
+                </td>
+                <td>
+                  {{getPanelPower}}
+                </td>
+            </tr>
+            <tr>
+                <td>
+                    Size
+                </td>
+                <td>
+                  {{getSize}}kw
+                </td>
+            </tr>
+            <tr>
+                <td>
+                    Capacity
+                </td>
+                <td>
+                  {{getCapacity}}kWh
+                </td>
+            </tr>
+            &lt;!&ndash;<tr>
+                <td>
+                    {{getFacing}}
+                </td>
+                <td>
+                    {{getRoofTilt}}°
+                </td>
+                <td>
+                    {{getPanelCount}}
+                </td>
+                <td>
+                    {{getPanelPower}}
+                </td>
+                <td>
+                    {{getSize}}kw
+                </td>
+                <td>
+                    {{getCapacity}}kWh
+                </td>
+            </tr>&ndash;&gt;
+            </tbody>
+        </table>-->
+      </div>
+        <div class="ui seven wide column no-padding d-flex">
+        <table class="ui small very celled padded unstackable table">
+            <thead>
+            <tr>
+                <th class="thinHeading" colspan="2">Selected Roof</th>
+            </tr>
+
+            </thead>
+            <tbody>
+            <tr>
+                <td>
+                    Estimated Cost
+                </td>
+                <td>
+                  {{getEstimatedCost}}
+                </td>
+            </tr>
+            <tr>
+                <td>
+                    Estimated Saving
+                </td>
+                <td>
+                    ${{getEstimatedSavings}}
+                </td>
+            </tr>
+            <tr>
+                <td>
+                    Area
+                </td>
+                <td>
+                  {{getArea}} m<sup>2</sup>
+                </td>
+            </tr>
+            <tr>
+                <td>
+                    Panels
+                </td>
+                <td>
+                  {{getPanelCount}}
+                </td>
+            </tr>
+            <tr>
+                <td>
+                    Size
+                </td>
+                <td>
+                  {{getSize}}kw
+                </td>
+            </tr>
+            <tr>
+                <td>
+                    Capacity
+                </td>
+                <td>
+                  {{getCapacity}}kWh
+                </td>
+            </tr>
+            </tbody>
+        </table>
+
+    </div>
+</template>

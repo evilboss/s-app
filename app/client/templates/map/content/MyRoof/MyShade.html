@@ -1,0 +1,53 @@
+<template name="MyShade">
+    <div class="ui container segment map-info-block full-height">
+        <div class="sixteen wide column">
+            <div class="ui blue ribbon label">
+                About My Roof
+            </div>
+            <h4 class="ui horizontal divider header">
+                My roof usually gets
+            </h4>
+
+            <div class="ui form three column grid shade">
+                <div class="column">
+                    <div class="ui radio checkbox ">
+                        <input type="radio" class="savings-roof" value="none"
+                               name="none" {{isChecked 'none' 'shadeSettings' }} data-savings="5">
+                        <label>No Shade</label>
+                        <img class="ui avatar image" src="/residential.png">
+                    </div>
+                </div>
+                <div class="column">
+
+                    <div class="ui radio checkbox">
+                        <input type="radio" class="savings-roof" value="little"
+                               name="little" {{isChecked 'little' 'shadeSettings'}} data-savings="3">
+                        <label>Some Shade</label>
+                        <img class="ui avatar image" src="/tree.png">
+                        <img class="ui avatar image" src="/residential.png">
+                    </div>
+                </div>
+                <div class="column">
+
+                    <div class="ui radio checkbox">
+                        <input type="radio" class="savings-roof" value="lot"
+                               name="lot" {{isChecked 'lot' 'shadeSettings'}} data-savings="1">
+                        <label>Lots of Shade</label>
+                        <img class="ui avatar image" src="/tree.png">
+                        <img class="ui avatar image" src="/residential.png">
+                        <img class="ui avatar image" src="/tree.png">
+                    </div>
+
+                </div>
+            </div>
+
+        </div>
+        <div class="ui grid">
+            <div class="sixteen wide column">
+                <button class="ui right floated primary button increment-base" id="ok">
+                    OK
+                </button>
+            </div>
+        </div>
+    </div>
+</template>

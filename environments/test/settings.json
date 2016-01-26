@@ -1,0 +1,28 @@
+{
+  "public": {
+    "google": {
+      "maps": "AIzaSyCBVEan1W3xet4WrOXoNy98nF0I5I5QnR0"
+    },
+    "panelSize": {
+      "width": 1640,
+      "length": 1046
+    },
+    "shades":{
+      "none":[110,150,240,250],
+      "little":[110,150,290],
+      "lot":[190]
+    },
+    "contact": {
+      "from": "enquiries@markgroup.com.au",
+      "subject": "Your Personal Solar Report",
+      "logo": "http://markgroup.com.au/wp-content/uploads/2015/10/cropped-logo212.png",
+      "telephone": "0439 322 018"
+    }
+  },
+  "private": {
+  },
+  "kadira": {
+    "appId": "s7c6oE3zLikFdq3MH",
+    "appSecret": "fb3f590a-6883-47a5-b287-f8b9b1d18715"
+  }
+}
